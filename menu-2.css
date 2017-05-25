@@ -1,21 +1,23 @@
 body {
-  padding:50px;
   background:black;
 }
 
-.menu-2 {margin-top:50px;}
+.menu-2 {
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding: 50px;
+  width: 100%;
+  background:   #4C59D8;
+}
 
 .menu-2 li {
   display:inline-block;
   padding:10px;
-  /*width: 1000px;*/
 
 }
-.menu-2 a:link{color: #f0f0f0;}
-.menu-2 a:visited{color: #f0f0f0;}
+
 .menu-2 a {
   display:inline-block;
-  /*color: #f0f0f0;*/
   text-transform: uppercase;
   display:inline-block;
   box-sizing:border-box;
@@ -24,46 +26,44 @@ body {
   transition:color .3s ease-in;
 
 }
-.menu-2 li:hover a{  
-  color:pink;
+.menu-2 li:hover li{  
+  color:#f0f0f0;
 }
 
 .menu-2 a::before, a::after {
   display: block; 
   position: relative;
-  left: 0px;
   width: 1px;
   height: 2px;
   background: #fff;
   content: '';
   opacity: 0;
-  transition: all .9s ease-in-out;
+  transition: all .7s ease-in-out;
 }
 
-.menu-2 a::before {bottom:10px;}
-.menu-2 a::after {top:10px;}
+
+
+.menu-2 a::before {bottom:10px; left: 0;}
+.menu-2 a::after {top:10px; left:100%;}
 
 .menu-2 li:hover a::before{
     background:pink;
-    /*bottom:10px;*/
-    left:100%;
-    animation: one .9s ease-in-out;
+    animation: one .7s ease-in-out forwards;
 
 
 }
 
 .menu-2 li:hover a::after{
-  /*opacity: 1;*/
   background: pink;
-  /*top: 10px;*/
-  left:100%;
-  animation: one .9s ease-in-out;
+  left:0;
+  animation: one .7s ease-in-out forwards;
   
 }
 
 @keyframes one {
-  
-  50% {opacity: 1;width: 100%}
-  100%{opacity: 0;width: 1%;}
+   100% {
+    opacity: 1;
+    width: 100%;
+   }
 
 }

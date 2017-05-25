@@ -1,6 +1,13 @@
 body {
-  padding:50px;
   background:black;
+}
+
+.menu-1{
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding: 50px;
+  background: #912470;
+  width: 100%;
 }
 
 .menu-1 li {
@@ -9,8 +16,6 @@ body {
   /*width: 1000px;*/
 
 }
-.menu-1 a:link{color: #f0f0f0;}
-.menu-1 a:visited{color: #f0f0f0;}
 .menu-1 a {
   display:inline-block;
   /*color: #f0f0f0;*/
@@ -19,23 +24,23 @@ body {
   box-sizing:border-box;
   font-size:20px;
   text-decoration:none;
-  transition:color .3s ease-in-out;
+  transition:color .7s ease-in-out;
 
 }
 .menu-1 li:hover a{  
-  color:pink;
+  color:#000;
 }
 
-.menu-1 a::before, a::after {
+.menu-1 a::before, .menu-1 a::after {
   display: block; 
   position: relative;
   left: 0px;
   width: 100%;
-  height: 5px;
+  height: 2px;
   background: #fff;
   content: '';
   opacity: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .menu-1 a::before {bottom:30px;}
@@ -43,13 +48,13 @@ body {
 
 .menu-1 li:hover a::before{
     opacity: 1;
-    background:pink;
+    background:#000;
     bottom:10px;
 
 }
 
 .menu-1 li:hover a::after{
   opacity: 1;
-  background: pink;
+  background: #000;
   top: 10px;
 }

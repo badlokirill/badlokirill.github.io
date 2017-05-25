@@ -1,0 +1,57 @@
+body {
+  background:black;
+}
+
+.menu-3 {
+  text-align: center;
+  letter-spacing: 0.5em;
+  padding: 50px;
+  width: 100%;
+  background:#00b300;
+}
+
+.menu-3 li {
+  display:inline-block;
+  padding:10px;
+    transition: all .5s ease-in-out;
+    /*transform-style: flat;*/
+  /*background: red;*/
+
+
+
+}
+
+.menu-3 a {
+  display:inline-block;
+  text-transform: uppercase;
+  display:inline-block;
+  box-sizing:border-box;
+  font-size:20px;
+  text-decoration:none;
+  text-align: center;
+  /*transition: color .9s ease-in-out;*/
+ 
+
+}
+/*
+.menu-3 li:first-child:hover a{
+  color: black;
+}
+*/
+
+ul {
+/*  perspective: 2000px;
+  perspective-origin:center center;*/
+}
+
+
+.menu-3 li:hover{
+  /*transform:scale(1.2); */
+  box-shadow: 0 5px 5px black;
+  text-shadow: 0 15px 10px ;
+  /*transform:rotateX(180deg);*/
+
+
+/*  background: red;*/
+    /*transition: all .9s ease-in-out;*/
+}
